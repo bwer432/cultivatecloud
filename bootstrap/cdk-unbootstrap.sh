@@ -5,7 +5,7 @@ aws cloudformation list-stacks --query "StackSummaries[?StackName=='CDKToolkit'&
 aws cloudformation delete-stack --stack-name CDKToolkit
 cdkbucket=$(aws s3 ls | grep cdk- | awk '{printf $3}')
 echo $cdkbucket
-aws s3api delete-objects --bucket $cdkbucket \ 
+aws s3api delete-objects --bucket $cdkbucket \
   --delete "$(aws s3api list-object-versions \
   --bucket $cdkbucket \
   --output=json \
