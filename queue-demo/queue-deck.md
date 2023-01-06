@@ -56,7 +56,7 @@ Queue code examples:
 
 ```
 git clone https://github.com/bwer432/awsdemo
-cd queue-demo/queue
+cd awsdemo/queue-demo/queue
 npm install # repopulate node_modules
 npx cdk deploy
 aws sqs list-queues 
