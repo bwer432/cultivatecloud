@@ -1,4 +1,6 @@
 bootstrap/deck.pptx
 bootstrap/~$deck.pptx
 .DS_Store
-empty-deck.pptx
+empty-demo/empty-deck.pptx
+queue-demo/queue-deck.pptx
+queue-demo/~$queue-deck.pptx
