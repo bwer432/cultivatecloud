@@ -1,6 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
+import { Tag, Tags } from 'aws-cdk-lib';
 
 export class TaggingStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
