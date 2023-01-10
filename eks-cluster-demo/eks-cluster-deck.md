@@ -46,7 +46,7 @@ cd eks-cluster
 
 ```
 git clone https://github.com/bwer432/awsdemo
-cd awsdemo/static-site-demo/static-site
+cd awsdemo/eks-cluster-demo/eks-cluster
 npm install 
 npm run build
 npx cdk deploy
