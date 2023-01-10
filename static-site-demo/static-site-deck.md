@@ -39,6 +39,8 @@ cd static-site
 ls
 ```
 
+---
+
 # Deploy a static website
 
 ```
