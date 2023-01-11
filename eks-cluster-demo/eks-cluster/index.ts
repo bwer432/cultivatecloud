@@ -24,8 +24,8 @@ class EKSCluster extends cdk.Stack {
     const onDemandASG = new autoscaling.AutoScalingGroup(this, 'OnDemandASG', {
       vpc: vpc,
       role: workerRole,
-      minCapacity: 1,
-      maxCapacity: 10,
+      minCapacity: 2,
+      maxCapacity: 6,
       instanceType: new ec2.InstanceType('t3.medium'),
       machineImage: new eks.EksOptimizedImage({
         kubernetesVersion: '1.21',
@@ -35,6 +35,12 @@ class EKSCluster extends cdk.Stack {
       });
 
     eksCluster.connectAutoScalingGroupCapacity(onDemandASG, {});
+
+    // Now add a Fargate profile
+    new eks.FargateProfile(this, 'SportsFargateProfile', {
+      cluster: eksCluster,
+      selectors: [ { namespace: 'sports' } ],
+    });
   }
 }
 

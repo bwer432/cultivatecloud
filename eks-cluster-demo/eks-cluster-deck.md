@@ -59,6 +59,7 @@ npx cdk deploy
 ```
 diff ../index-capacity.ts index.ts
 cp ../index-capacity.ts index.ts
+npm run build
 npx cdk deploy 
 ```
 
@@ -69,6 +70,7 @@ npx cdk deploy
 ```
 diff ../index-fargate.ts index.ts
 cp ../index-fargate.ts index.ts
+npm run build
 npx cdk deploy 
 ```
 
