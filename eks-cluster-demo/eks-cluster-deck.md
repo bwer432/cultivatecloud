@@ -42,6 +42,7 @@ cd eks-cluster
 ```
 
 ---
+
 # Deploy EKS cluster.
 
 ```
@@ -74,7 +75,21 @@ npm run build
 npx cdk deploy 
 ```
 
+---
+
+# Destroy EKS cluster.
+
+```
+npx cdk destroy -f
+```
+
+---
+
 # AWS CDK EKS Construct documentation
 
 EKS documentation:
 - [Amazon EKS Construct Library](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_eks-readme.html)
+- [`class Cluster`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_eks.Cluster.html)
+- [`class FargateProfile`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_eks.FargateProfile.html)
+- [`class FargateProfileProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_eks.FargateProfileProps.html)
+- [`interface Selector`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_eks.Selector.html)
