@@ -80,6 +80,7 @@ npx cdk deploy
 # Destroy EKS cluster.
 
 ```
+kubectl get service -A -o jsonpath='{range .items[?(@.spec.type=="LoadBalancer")]}{.metadata.name}{" -n "}{.metadata.namespace}{"\n"}{end}' | xargs -I % sh -c "kubectl delete service %"
 npx cdk destroy -f
 ```
 

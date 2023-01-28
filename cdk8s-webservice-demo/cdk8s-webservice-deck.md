@@ -41,8 +41,8 @@ which cdk8s
 ```
 git clone https://github.com/bwer432/awsdemo
 cd awsdemo/cdk8s-install-demo
-mkdir -p cdk8s-empty
-cd cdk8s-empty
+mkdir -p cdk8s-hello
+cd cdk8s-hello
 npx cdk8s init typescript-app
 cat main.ts
 ```
@@ -52,13 +52,11 @@ cat main.ts
 # Synthesize Kubernetes YAML manifest
 
 ```
-npm install
 npm run compile
-npx cdk8s import
 npx cdk8s synth
 cat dist/construct-metadata.json && echo
-cat dist/cdk8s-empty.k8s.yaml
-wc dist/cdk8s-empty.k8s.yaml
+cat dist/cdk8s-hello.k8s.yaml
+wc dist/cdk8s-hello.k8s.yaml
 ```
 
 ---
