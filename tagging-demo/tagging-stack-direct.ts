@@ -17,7 +17,7 @@ export class TaggingStack extends cdk.Stack {
     // add standard tags to resource
     Tags.of(this).add('project', 'tagging-demo');
     Tags.of(this).add('environment', 'demo');
-    Tags.of(this).add('owner', 'awsdemos');
+    Tags.of(this).add('owner', 'cultivatecloud');
     Tags.of(this).add('department', '1234');
   }
 }

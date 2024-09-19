@@ -13,7 +13,7 @@ export class TaggingStack extends cdk.Stack {
     // add standard tags to resource (or read from file, app parameters)
     tagMap.set("project", "tagging-demo");
     tagMap.set("environment", "demo");
-    tagMap.set("owner", "awsdemos");
+    tagMap.set("owner", "cultivatecloud");
     tagMap.set("department", "9876");
 
     // example resource

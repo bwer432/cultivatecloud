@@ -33,8 +33,8 @@ Steps:
 # Borrow AWS Samples CDK Example for EKS cluster
 
 ```
-git clone https://github.com/bwer432/awsdemo
-cd awsdemo/eks-cluster-demo
+git clone https://github.com/bwer432/cultivatecloud
+cd cultivatecloud/eks-cluster-demo
 git clone https://github.com/aws-samples/aws-cdk-examples
 cp -R aws-cdk-examples/typescript/eks/cluster ./eks-cluster
 rm -rf aws-cdk-examples
@@ -46,8 +46,8 @@ cd eks-cluster
 # Deploy EKS cluster.
 
 ```
-git clone https://github.com/bwer432/awsdemo
-cd awsdemo/eks-cluster-demo/eks-cluster
+git clone https://github.com/bwer432/cultivatecloud
+cd cultivatecloud/eks-cluster-demo/eks-cluster
 npm install 
 npm run build
 npx cdk deploy

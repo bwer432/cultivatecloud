@@ -30,8 +30,8 @@ Steps:
 # Borrow an example
 
 ```
-git clone https://github.com/bwer432/awsdemo
-cd awsdemo/static-site-demo
+git clone https://github.com/bwer432/cultivatecloud
+cd cultivatecloud/static-site-demo
 git clone https://github.com/aws-samples/aws-cdk-examples
 cp -R aws-cdk-examples/typescript/static-site ./static-site
 rm -rf aws-cdk-examples
@@ -44,8 +44,8 @@ ls
 # Deploy a static website
 
 ```
-git clone https://github.com/bwer432/awsdemo
-cd awsdemo/static-site-demo/static-site
+git clone https://github.com/bwer432/cultivatecloud
+cd cultivatecloud/static-site-demo/static-site
 npm install 
 npm run build
 accountId=$(aws sts get-caller-identity --query Account --output text)

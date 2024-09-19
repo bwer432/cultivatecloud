@@ -31,8 +31,8 @@ Steps:
 # Add tags to a CDK app definition
 
 ```
-git clone https://github.com/bwer432/awsdemo
-cd awsdemo/tagging-demo/tagging
+git clone https://github.com/bwer432/cultivatecloud
+cd cultivatecloud/tagging-demo/tagging
 npm install # repopulate node_modules
 npx cdk deploy
 vi lib/tagging-stack.ts # show pre-tags baseline

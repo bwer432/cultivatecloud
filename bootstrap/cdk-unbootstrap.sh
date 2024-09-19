@@ -1,5 +1,5 @@
 #!/bin/bash
-# Example from https://github.com/bwer432/awsdemo/bootstrap
+# Example from https://github.com/bwer432/cultivatecloud/bootstrap
 
 aws cloudformation list-stacks --query "StackSummaries[?StackName=='CDKToolkit'&&StackStatus=='CREATE_COMPLETE']"
 aws cloudformation delete-stack --stack-name CDKToolkit

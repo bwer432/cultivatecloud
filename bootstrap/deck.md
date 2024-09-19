@@ -56,7 +56,7 @@ cdk bootstrap aws://$AWS_ACCOUNT_ID/$AWS_REGION
 ## Purpose: Automate resource deployment in the AWS cloud.
 
 - Check AWS CDK documentation.
-- Check other `awsdemo` demonstrations.
+- Check other `cultivatecloud` demonstrations.
 
 ---
 

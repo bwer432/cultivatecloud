@@ -1,5 +1,5 @@
 #!/bin/bash
-# Example from https://github.com/bwer432/awsdemo/bootstrap
+# Example from https://github.com/bwer432/cultivatecloud/bootstrap
 
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 echo $AWS_ACCOUNT_ID 

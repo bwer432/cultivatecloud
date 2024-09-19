@@ -16,7 +16,7 @@ export class QldbLedgerStack extends cdk.Stack {
       deletionProtection: false,
       name: 'vehicle-registration',
       tags: [
-        { key: 'project', value: 'awsdemos', },
+        { key: 'project', value: 'cultivatecloud', },
         { key: 'env', value: 'demo' },
       ],
     });

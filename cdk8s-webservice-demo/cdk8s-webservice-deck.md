@@ -39,8 +39,8 @@ which cdk8s
 # Make example CDK8s app
 
 ```
-git clone https://github.com/bwer432/awsdemo
-cd awsdemo/cdk8s-install-demo
+git clone https://github.com/bwer432/cultivatecloud
+cd cultivatecloud/cdk8s-install-demo
 mkdir -p cdk8s-hello
 cd cdk8s-hello
 npx cdk8s init typescript-app

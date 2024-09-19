@@ -55,8 +55,8 @@ Queue code examples:
 # Deploy a queue via CDK app stack with Python clients
 
 ```
-git clone https://github.com/bwer432/awsdemo
-cd awsdemo/queue-demo/queue
+git clone https://github.com/bwer432/cultivatecloud
+cd cultivatecloud/queue-demo/queue
 npm install # repopulate node_modules
 npx cdk deploy
 aws sqs list-queues 
